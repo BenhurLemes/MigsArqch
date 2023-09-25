@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MigsArch</title>
+    <link rel="shortcut icon" href="./img/fov-icon.png" type="image/x-icon">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+     <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">   
+    <!-- CSS do site -->
+    <link rel="stylesheet" alt="text/css" href="./css/style2.css">
+    <!-- Javascript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+                <a href="#" class="navbar-brand primary-color">
+                    <img src="./img/logo.png" alt="Imigs">
+                    <span>MigsArch</span>
+                </a>
+                <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#navbar-items" 
+                arial-controls="navbar-items" arial-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color">Imóveis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Slider do site -->
+    <section class="container" id="slider-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button class="active"
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide-to="0"
+                aria-current="true"
+                aria-label="Slide 1">
+                </button>
+                <button
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide-to="1"
+                aria-current="true"
+                aria-label="Slide 2">
+                </button>
+                <button
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide-to="2"
+                aria-current="true"
+                aria-label="Slide 3">
+                </button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/imagem.jpg" alt="Casa 1" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Projetos planejados</h5>
+                        <a href="#" class="btn btn-dark">Ver mais!</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/imagem.jpg" alt="Casa 2" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Trabalhos feitos</h5>
+                        <a href="#" class="btn btn-dark">Ver mais!</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/imagem.jpg" alt="Casa 3" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Projetos Inovadores</h5>
+                        <a href="#" class="btn btn-dark">Ver mais!</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#slider" 
+            data-bs-slide="prev">
+                <i class="bi bi-chevron-compact-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" 
+            type="button" 
+            data-bs-target="#slider" 
+            data-bs-slide="next">
+                <i class="bi bi-chevron-compact-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Mini banners -->
+        <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-person primary-color"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Sobre mim</h5>
+                            <p class="card-text secondary color">Lorem bla bla bla bla</p>
+                            <a href="#" class="btn btn-dark">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-layers primary-color"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Trabalhos completos</h5>
+                            <p class="card-text secondary color">Lorem bla bla bla bla</p>
+                            <a href="#" class="btn btn-dark">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-house-door primary-color"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Projetos Planejados</h5>
+                            <p class="card-text secondary color">Lorem bla bla bla bla</p>
+                            <a href="#" class="btn btn-dark">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Destaques -->
+    <section>
+        <div class="container" id="featured-container">
+            <div class="col-12">
+                <h2 class="title primary-color">Trabalhos em Destaque</h2>
+                <p class="subtitle secondary-color">Conheça meus trabalhos mais desafiadores!</p>
+            </div>
+            <div class="col-12" id="featured-images">
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <img src="./img/imagem.jpg" alt="Projeto 1" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projeto</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="./img/imagem.jpg" alt="Projeto 1" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projeto</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="./img/imagem.jpg" alt="Projeto 1" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projeto</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="./img/imagem.jpg" alt="Projeto 1" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projeto</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="./img/imagem.jpg" alt="Projeto 1" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projeto</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="./img/imagem.jpg" alt="Projeto 1" class="img-fluid">
+                        <div class="banner-content">
+                            <p class="secondary-color">Categoria</p>
+                            <h3>Nome do Projeto</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Info -->
+    <section>
+        <div class="container" id="info-container">
+            <div class="col-12">
+                <h2 class="title primary-color">Detalhes importantes</h2>
+                <p class="subtitle secondary-color">Saiba mais sobre a experiência... bla bla bla</p>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-5" id="info-banner">
+                        <img src="./img/imagem.jpg" alt="informações da arquiteta" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="title primary-color">Estes dados fazem diferença</h2>
+                                <p class="subtitle secondary-color">Lorem bla bla </p>
+                            </div>
+                            <div class="col-12" id="info-numbers">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <h3 class="primary-color">5</h3>
+                                        <p class="secondary-color">Anos na arquitetura</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h3 class="primary-color">25</h3>
+                                        <p class="secondary-color">Projetos executados</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h3 class="primary-color">300</h3>
+                                        <p class="secondary-color">clientes satisfeitos!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="btn btn-dark">Saber Mais!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé do site -->
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Footer top -->
+                <div class="col-12" id="footer-top">
+                    <div class="row justify-content-between">
+                        <div class="col-4">
+                            <h2>MigsArch</h2>
+                        </div>
+                        <div class="col-4" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-person-badge"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer details -->
+                <div class="col-12" id="footer-details">
+                    <div class="row">
+                        <div class="col-12 col-md-4" id="news-container">
+                            <h4>Fique por dentro das novidades</h4>
+                            <p class="secondary-color">Inscreva-se para saber em primeira mão</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Digite o seu e-mail">
+                                </div>
+                                <button class="btn btn-dark" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-4" id="contact-container">
+                            <h4>Formas de contato</h4>
+                            <p class="secondary-color">(82)98888-8888</p>
+                            <p class="secondary-color">contato@email.com</p>
+                        </div>
+                        <div class="col-12 col-md-4" id="links-container">
+                            <div class="row">
+                                <h4>Você pode estar procurando por:</h4>
+                                <div class="col-6"> 
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color">Sobre mim</a></li>
+                                        <li><a href="#" class="secondary-color">Trabalhos</a></li>
+                                        <li><a href="#" class="secondary-color">Projetos</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color">Contato</a></li>
+                                        <li><a href="#" class="secondary-color">Contratar</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer bottom -->
+                <div class="col-12" id="footer-bottom">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color">MigsArch &copy; 2023</p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color">Realizamos o seu projeto <i class="bi bi-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
